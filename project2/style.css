@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-desktop_rfy0wb.svg');
+    background-color: rgb(60, 49, 160);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    text-align:center;
+    padding:0 20px;
+}
+nav{
+    text-align: left;
+    margin:45px 0; 
+    margin-left: 5%;
+    font-size: 3rem;
+    border: 3px solid rgb(239, 8, 8);
+    border-right: transparent;
+    width: 11%;
+    padding: 5px 5px 5px 5px;
+    box-shadow: -0.06em 0 white, -0.06em 0 rgb(35, 13, 161);
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.box > div:last-child{
+    width: 40%;
+    color: white;
+}
+
+.box > div:last-child p{
+    font-size: 18px;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+button{
+    font-size: 20px;
+    padding: 13px;
+    background-color: white;
+    width: 250px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #674BAF;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 17px -8px black;
+    cursor: pointer;
+    border: 3px solid white;
+    margin-top: 20%;
+    transition: all 0.5s;
+}
+button a{
+    text-decoration: none;
+}
+
+button:hover {
+    border-top-right-radius: 30px;
+    background: rgba(166, 68, 173, 0.9);
+    transform: translateY(-10px);
+
+}
+footer{
+    font-size: 2rem;
+    margin: 10px 70px;
+    text-align: end;
+    margin-left:30%;
+}
+
+.footer i{
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.footer i:hover{
+  transform: translateY(-15px);
+}
+@media screen and (min-width: 767px) and (max-width: 1350px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        height: 100vh;
+        background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-mobile_sb936e.svg');
+        background-color: #674BAF;
+        background-size:cover;
+        background-position:center;
+    }
+    .box{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .box > div:last-child{
+        width: 80%;
+    }
+    .box > div:last-child p{
+        font-size: 15px;
+    }
+    .box img{
+        width: 80%;
+    }
+    .header{
+        font-size: 20px;
+    }
+    nav{
+        margin: 10% 0;
+        margin-left: 30px;
+    }
+    nav span{
+        width: 40%;
+    }
+    button{
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+    }
+    .footer{
+        margin: 10% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 766px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        height: 100%;
+        background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-mobile_sb936e.svg');
+        background-color: #674BAF;
+        background-size:cover;
+        background-position:center;
+    }
+    .box{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .box > div:last-child{
+        width: 80%;
+    }
+    .box > div:last-child p{
+        font-size: 15px;
+    }
+    .box img{
+        width: 80%;
+    }
+    .header{
+        font-size: 20px;
+    }
+    nav{
+        margin: 10% 0;
+        margin-left: 30px;
+    }
+    nav span{
+        width: 40%;
+    }
+    button{
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+    }
+    .footer{
+        margin: 20% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+}
+p{
+    line-height: 20px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: move 0.5s linear forwards;
+    
+}
+@keyframes move{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
